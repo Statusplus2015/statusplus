@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+        STATUS PLUS website
+        Author: Rakhat Bektas      E-mail: rakhatbektas@gmail.com
+        Date:06/03/2023
+        -->
+        <meta charset="utf-8" />
+        <title>Status Plus</title>
+        <link href="stps_mainbasic.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="quiz.js"></script>
+        <script src="mobile_nav.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+    <header>
+        <!--LOGO-->
+        <a href="stsp_main.html">
+           <div class="logo"></div> 
+        </a>
+        <!--NAVIGATION-->
+        <nav>
+            <ul class="nav_links">
+                <li><a href="stsp_offers.html">Offers</a></li>
+                <li><a href="stsp_corporate.html">Corporate Learning</a></li>
+                <li><a href="stps_quiz.html">Quiz</a></li>
+                <li><a href="stps_gallery.html">Gallery</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <!--MOBILE NAVIGATION author:Adam Nagy
+        code was for html(MOBILE NAVIGATION), css(mobile navigation) and java script(mobile_nav) was taken from here
+    https://dev.to/javascriptacademy/responsive-navigation-bar-with-mobile-menu-using-html-css-2hpd
+and modified by Rakhat Bektas-->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="stsp_offers.html">Offers</a></li>
+                <li><a href="stsp_corporate.html">Corporate Learning</a></li>
+                <li><a href="stps_quiz.html">Quiz</a></li>
+                <li><a href="stps_gallery.html">Gallery</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+          </div>
+    </header>
+    <body>
+        <div class="container">
+<!--QUIZ author:Sulaimon Olaniran
+        code was for html(QUIZ), css(quiz) and java script(quiz.js) was taken from here
+https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp
+and modified by Rakhat Bektas-->
+<div class="quizIcon" id="q"></div>
+<h2 id="quiz">English Quiz</h2>
+<main >
+    <div class="modal-container" id="score-modal">
+
+    <div class="modal-content-container">
+        <h1>Results</h1>
+
+        <div class="grade-details">
+            <p>Attempts : <b>50</b></p>
+            <p>Wrong Answers : <span id="wrong-answers"></span></p>
+            <p>Right Answers : <span id="right-answers"></span></p>
+            <p>Grade : <span id="grade-percentage"></span>%</p>
+            <p ><span id="remarks"></span></p>
+        </div>
+
+        <div class="modal-button-container">
+            <button onclick="closeScoreModal()">Start Quiz</button>
+        </div>
+
+    </div>
+</div>
+<!-- end of modal of quiz details-->
+
+<div class="game-quiz-container" id="quizQuestions">
+
+    <div class="game-details-container">
+        <h1>Score : <span id="player-score"></span> / 50</h1>
+        <h1> Question : <span id="question-number"></span> / 50</h1>
+    </div>
+
+    <div class="game-question-container">
+        <h1 id="display-question"></h1>
+    </div>
+
+    <div class="game-options-container">
+
+       <div class="modal-container" id="option-modal">
+
+            <div class="modal-content-container">
+                 <h1 style="color: red;font-size: 1.4rem;">Please Pick An Option</h1>
+
+                 <div class="modal-button-container">
+                    
+                </div>
+
+            </div>
+
+       </div>
+
+        <span>
+            <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+            <label for="option-one" class="option" id="option-one-label"></label>
+        </span>
+
+
+        <span>
+            <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+            <label for="option-two" class="option" id="option-two-label"></label>
+        </span>
+
+
+        <span>
+            <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+            <label for="option-three" class="option" id="option-three-label"></label>
+        </span>
+
+
+        <span>
+            <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+            <label for="option-four" class="option" id="option-four-label"></label>
+        </span>
+
+
+    </div>
+
+    <div class="next-button-container">
+        <button onclick="handleNextQuestion()">Next Question</button>
+    </div>
+
+</div>
+</div>
+</main>
+        </div>
+<!--FOOTER-->
+<div class="footer-container" id="footer">
+    <div class="footer">
+        <div class="footer-heading footer3">
+            <h1>Social Media</h1>
+            <a href="https://www.instagram.com/statusplus_astana/"><i class="fa fa-instagram" style="font-size: 5rem ;"></i></a>
+        </div>
+        <div class="footer-heading footer2">
+            <h1>Contact Us</h1>
+            <a href="tel:+77075999399">+7‒707‒599‒93‒99</a>
+            <a href="tel:+77172252360">+7 (717)‒225‒23‒60</a>
+            <a href="tel:+77084252360">+7‒708‒425‒23‒60</a>
+           
+            <a href="https://api.whatsapp.com/send/?phone=77075999399"><i class="fa fa-whatsapp" style="font-size: 5rem ;"></i></a>
+        
+            <a href="https://api.whatsapp.com/send/?phone=77075999399""><i class="fa fa-whatsapp" style="font-size: 5rem ;"></i></a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1>About us</h1>
+            <p style="font-size: 1.6rem;">Status Plus, educational center,<br> Respublica Avenue, 48, Astana</p>
+            <a href="https://go.2gis.com/mu1pa">2GIS Status Plus </a>
+        </div>
+        <div class="footer-heading footer1">
+            <h1><i class="fa fa-language" style="font-size: 3rem;"></i> Change Language</h1>
+            <a href="index.html">Қазақша</a>
+            <a href="stsp_main.html">English</a>
+            <a href="stsp_mainRUS.html">Русский</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

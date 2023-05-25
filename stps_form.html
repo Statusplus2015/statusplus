@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+        STATUS PLUS website
+        Author: Rakhat Bektas      E-mail: rakhatbektas@gmail.com
+        Date:06/03/2023
+        -->
+        <meta charset="utf-8" />
+        <title>Status Plus</title>
+        <link href="stps_mainbasic.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="quiz.js"></script>
+        <script src="mobile_nav.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    </head>
+    <header>
+        <!--LOGO-->
+        <a href="stsp_main.html">
+           <div class="logo"></div> 
+        </a>
+        <!--NAVIGATION-->
+        <nav>
+            <ul class="nav_links">
+                <li><a href="stsp_offers.html">Offers</a></li>
+                <li><a href="stsp_corporate.html">Corporate Learning</a></li>
+                <li><a href="stps_quiz.html">Quiz</a></li>
+                <li><a href="stps_gallery.html">Gallery</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <!--MOBILE NAVIGATION author:Adam Nagy
+        code was for html(MOBILE NAVIGATION), css(mobile navigation) and java script(mobile_nav) was taken from here
+    https://dev.to/javascriptacademy/responsive-navigation-bar-with-mobile-menu-using-html-css-2hpd
+and modified by Rakhat Bektas-->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="stsp_offers.html">Offers</a></li>
+                <li><a href="stsp_corporate.html">Corporate Learning</a></li>
+                <li><a href="stps_quiz.html">Quiz</a></li>
+                <li><a href="stps_gallery.html">Gallery</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+          </div>
+    </header>
+    <body>
+        <div class="forms">
+            <form action="action_page.php">
+                <div class="textInput">
+                    <div class="Fname">
+                        <label for="fname">First name:* </label>
+                        <input type="text" id="fname" name="fname" placeholder="First Name..." required> 
+                    </div>
+                    
+                    <div class="Lname">
+                        <label for="lname">Last name:* </label>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name..." required>
+                    </div>
+                    
+                    <div class="phoneNum">
+                        <label for="phone">Phone number:* </label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7777777777" required>
+                    </div>
+                    
+                    <div class="ageNum">
+                        <label for="age">Age:* </label>
+                        <input type="number" id="age" name="age" min="3" max="100" required>
+                    </div>
+
+                    <div class="classNum">
+                        <label for="grade">Grade: </label>
+                        <input type="number" id="grade" name="grade" min="1" max="11">
+                    </div>
+
+                    <div class="groupType">
+                        <fieldset>
+                            <legend>Choose a course:* </legend>
+                                <div>
+                                    <input type="radio" id="eng" name="group" value="English" required>
+                                    <label for="eng">English</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="kaz" name="group" value="Kazakh" required>
+                                    <label for="kaz">Kazakh</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="rus" name="group" value="Russian" required>
+                                    <label for="rus">Russian</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="math" name="group" value="Math" required>
+                                    <label for="math">Math</label>
+                                </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>How you want to study:* </legend>
+                            <div>
+                                <input type="radio" id="inGroup" name="class" value="Group" required>
+                                <label for="inGroup">In a Group</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="individual" name="class" value="Individual" required>
+                                <label for="individual">Individual</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="inPair" name="class" value="Pair" required>
+                                <label for="inPair">In a Pair</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+        <!--FOOTER-->
+        <div class="footer-container" id="footer">
+            <div class="footer">
+                <div class="footer-heading footer3">
+                    <h1>Social Media</h1>
+                    <a href="https://www.instagram.com/statusplus_astana/"><i class="fa fa-instagram" style="font-size: 5rem ;"></i></a>
+                </div>
+                <div class="footer-heading footer2">
+                    <h1>Contact Us</h1>
+                    <a href="tel:+77075999399">+7‒707‒599‒93‒99</a>
+                    <a href="tel:+77172252360">+7 (717)‒225‒23‒60</a>
+                    <a href="tel:+77084252360">+7‒708‒425‒23‒60</a>
+                   
+                    <a href="https://api.whatsapp.com/send/?phone=77075999399"><i class="fa fa-whatsapp" style="font-size: 5rem ;"></i></a>
+                
+                    <a href="https://api.whatsapp.com/send/?phone=77075999399""><i class="fa fa-whatsapp" style="font-size: 5rem ;"></i></a>
+                </div>
+                <div class="footer-heading footer1">
+                    <h1>About us</h1>
+                    <p style="font-size: 1.6rem;">Status Plus, educational center,<br> Respublica Avenue, 48, Astana</p>
+                    <a href="https://go.2gis.com/mu1pa">2GIS Status Plus </a>
+                </div>
+                <div class="footer-heading footer1">
+                    <h1><i class="fa fa-language" style="font-size: 3rem;"></i> Change Language</h1>
+                    <a href="index.html">Қазақша</a>
+                    <a href="stsp_main.html">English</a>
+                    <a href="stsp_mainRUS.html">Русский</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+<script>
+    const form = document.querySelector("#form")
+    const submitButton = document.querySelector("#submit")
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJSr8Ieq6tAfW3ZyECmXr356aN9Dm1Sl4FZbUM19sjLIUyUOqeOh_PWvUHJewsZvTpbw/exec'
+ 
+    form.addEventListener('submit', e => {
+      submitButton.disabled = true
+      e.preventDefault()
+      let requestBody = new FormData(form)
+      fetch(scriptURL, { method: 'POST', body: requestBody})
+        .then(response => {
+           alert('Success!', response)
+           submitButton.disabled = false
+          })
+        .catch(error => {
+        alert('Error!', error.message)
+          submitButton.disabled = false
+ 
+        }
+        )
+    })
+ </script>
+</html>
+        
