@@ -64,7 +64,7 @@ header
 }
 .logo
 {
-    background-image: url(./picsAndLogo/logo.png);
+    background-image: url(../picsAndLogo/logo.png);
     cursor: pointer;
     background-size: cover;
     width: 220px;
